@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>sự kiên chuột</title>
+</head>
+<body onload="dichuyen()">
+<img id="ball" style="position: relative;left: 0" src="quabong.jpg" height="100" width="100"/><br>
+<p>click nút phía dưới để di chuyển quả bóng</p>
+<button type="button" onclick="dichuyen(1)">sang trái</button>
+<button type="button" onclick="dichuyen(2)">sang phải</button>
+    <script>
+        function dichuyen(a) {
+            let thuoctinh=document.getElementById("ball");
+            if (a===1) {
+                thuoctinh.style.left=parseInt(thuoctinh.style.left)-10+'px';
+            }else if (a===2) {
+                thuoctinh.style.left=parseInt(thuoctinh.style.left)+10+'px';
+            }
+
+        }
+    </script>
+
+
+
+</body>
+</html>
